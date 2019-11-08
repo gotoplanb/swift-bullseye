@@ -16,22 +16,47 @@ struct ContentView: View {
     @State var score = 0
     @State var round = 1
     
+    struct ShadowStyle: ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+                .shadow(color: Color.black, radius: 5, x: 2, y: 2)
+        }
+    }
+    
+    struct LabelStyle: ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+                .modifier(ShadowStyle())
+                .foregroundColor(Color.white)
+                .font(Font.custom("Arial Rounded MT Bold", size: 18))
+        }
+    }
+    
+    struct ValueStyle: ViewModifier {
+        func body(content: Content) -> some View {
+            return content
+                .foregroundColor(Color.yellow)
+                .shadow(color: Color.black, radius: 5, x: 2, y: 2)
+                .font(Font.custom("Arial Rouned MT Bold", size: 24))
+        }
+    }
+    
     var body: some View {
         VStack {
             Spacer()
             
             // Target row
             HStack {
-                Text("Put the bullseye as close as you can to")
-                Text("\(target)")
+                Text("Put the bullseye as close as you can to").modifier(LabelStyle())
+                Text("\(target)").modifier(ValueStyle())
             }
             Spacer()
             
             // Slider row
             HStack {
-                Text("1")
+                Text("1").modifier(LabelStyle())
                 Slider(value: $sliderValue, in: 1...100)
-                Text("100")
+                Text("100").modifier(LabelStyle())
             }
             
             // Button row
@@ -58,11 +83,11 @@ struct ContentView: View {
                     Text("Start Over")
                 }
                 Spacer()
-                Text("Score:")
-                Text("\(score)")
+                Text("Score:").modifier(LabelStyle())
+                Text("\(score)").modifier(ValueStyle())
                 Spacer()
-                Text("Round:")
-                Text("\(round)")
+                Text("Round:").modifier(LabelStyle())
+                Text("\(round)").modifier(ValueStyle())
                 Spacer()
                 Button(action: {}) {
                     Text("Info")
@@ -71,6 +96,7 @@ struct ContentView: View {
             .padding(.bottom, 20)
         }
         .padding(.all, 20)
+        .background(Image("Background"), alignment: .center)
     }
     
     func startNewGame() {
