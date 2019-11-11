@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1029F4CD237A1ADB00940A6D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1029F4CC237A1ADB00940A6D /* AboutView.swift */; };
 		10A5F2A52373AA4A00CA6607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A5F2A42373AA4A00CA6607 /* AppDelegate.swift */; };
 		10A5F2A72373AA4A00CA6607 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A5F2A62373AA4A00CA6607 /* SceneDelegate.swift */; };
 		10A5F2A92373AA4A00CA6607 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A5F2A82373AA4A00CA6607 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1029F4CC237A1ADB00940A6D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		10A5F2A12373AA4A00CA6607 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A5F2A42373AA4A00CA6607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10A5F2A62373AA4A00CA6607 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				10A5F2A42373AA4A00CA6607 /* AppDelegate.swift */,
 				10A5F2A62373AA4A00CA6607 /* SceneDelegate.swift */,
 				10A5F2A82373AA4A00CA6607 /* ContentView.swift */,
+				1029F4CC237A1ADB00940A6D /* AboutView.swift */,
 				10A5F2AA2373AA4D00CA6607 /* Assets.xcassets */,
 				10A5F2AF2373AA4D00CA6607 /* LaunchScreen.storyboard */,
 				10A5F2B22373AA4D00CA6607 /* Info.plist */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1029F4CD237A1ADB00940A6D /* AboutView.swift in Sources */,
 				10A5F2A52373AA4A00CA6607 /* AppDelegate.swift in Sources */,
 				10A5F2A72373AA4A00CA6607 /* SceneDelegate.swift in Sources */,
 				10A5F2A92373AA4A00CA6607 /* ContentView.swift in Sources */,
