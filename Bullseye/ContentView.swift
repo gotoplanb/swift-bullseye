@@ -38,7 +38,7 @@ struct ContentView: View {
             return content
                 .foregroundColor(Color.yellow)
                 .shadow(color: Color.black, radius: 5, x: 2, y: 2)
-                .font(Font.custom("Arial Rouned MT Bold", size: 24))
+                .font(Font.custom("Arial Rounded MT Bold", size: 24))
         }
     }
     
